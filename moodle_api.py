@@ -46,10 +46,11 @@ class MoodleAPI:
         unix_hetkeaeg = int((datetime.now() - datetime(1970, 1, 1)).total_seconds())
         unixaeg_3_ndl_parast = int((datetime.now() + timedelta(weeks=3) - datetime(1970, 1, 1)).total_seconds())
         data = {
-            "options[userevents]": 1,
-            "options[siteevents]": 1,
+            "options[userevents]": 0,
+            "options[siteevents]": 0,
             "options[timestart]": unix_hetkeaeg,
             "options[timeend]": unixaeg_3_ndl_parast,
+            "options[ignorehidden]": 0
         }
         for idx, kursuse_id in enumerate(kursuste_idd):
             data[f"events[courseids][{idx}]"] = kursuse_id

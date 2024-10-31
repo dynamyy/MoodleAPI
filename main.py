@@ -16,6 +16,9 @@ def main():
     moodle_api = MoodleAPI(url, token_moodle)
     todoist_api = TodoistAPI("https://api.todoist.com/rest/v2/tasks", token_todoist)
 
+    moodle_api.call("core_calendar_get_calendar_upcoming_view")
+    
+
 
 if __name__ == "__main__":
     main()
