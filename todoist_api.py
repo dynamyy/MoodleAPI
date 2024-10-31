@@ -5,7 +5,7 @@ class TodoistAPI:
         self.token = token
         self.url = url
 
-    def loo_kaart(self, pealkiri:str, kirjeldus:str, sildid:list):
+    def loo_kaart(self, pealkiri:str, kirjeldus:str="", sildid:list=[]):
         headers = {
             'Authorization': f'Bearer {self.token}',
             'Content-Type': 'application/json'
