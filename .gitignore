@@ -18,6 +18,7 @@ venv.bak/
 dist/
 build/
 *.egg-info/
+setup.py
 
 # Installer logs
 pip-log.txt
@@ -55,5 +56,5 @@ Desktop.ini
 .env.local
 .env.*.local
 
-#Minu märkmed
+#Notes
 *.txt
